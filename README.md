@@ -5,7 +5,6 @@
 [![License](https://img.shields.io/badge/license-Apache--2.0-green?style=for-the-badge)](LICENSE)
 
 <p>
-  <a href="#news"><b>News</b></a> |
   <a href="#overview"><b>Overview</b></a> |
   <a href="#getting-started"><b>Getting Started</b></a> |
   <a href="#preference-data-construction"><b>Data Construction</b></a> |
@@ -14,10 +13,6 @@
 </p>
 
 </div>
-
-## News
-
-- **[2026/06]** We release the DiARC codebase for anonymous review.
 
 ## Overview
 
