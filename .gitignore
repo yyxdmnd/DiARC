@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local environments
+.env
+.venv/
+venv/
+env/
+
+# Generated datasets, model checkpoints, and generated artifacts
+data/*
+!data/ARC-AGI-1/
+!data/ARC-AGI-1/**
+!data/ARC-AGI-2/
+!data/ARC-AGI-2/**
+!data/Mini-ARC/
+!data/Mini-ARC/**
+!data/ConceptARC/
+!data/ConceptARC/**
+!data/1D-ARC/
+!data/1D-ARC/**
+!data/arc-community/
+!data/arc-community/**
+models/
+outputs/
+output/
+results/*/
+pre_trained_model*/
+pretrained_models/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.arrow
+*.parquet
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.pickle.bz2
+
+# Logs and caches
+logs/
+*.log
+wandb/
+cache/
+tmp/
+tmp_output/
+trainer_output/
+unsloth_compiled_cache/
+.cache/
+src/diarc/arc_data/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

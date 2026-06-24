@@ -1,0 +1,16 @@
+accelerate
+bitsandbytes
+datasets
+diskcache
+matplotlib
+numpy
+pandas
+peft
+pillow
+scikit-learn
+scipy
+torch
+tqdm
+transformers
+trl
+unsloth

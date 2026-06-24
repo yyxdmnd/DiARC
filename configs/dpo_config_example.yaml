@@ -1,0 +1,42 @@
+# Example paths use repo-relative defaults. Override with environment variables:
+#   DIARC_DATA_DIR=/path/to/data
+#   DIARC_MODEL_DIR=/path/to/models
+#   DIARC_OUTPUT_DIR=/path/to/outputs
+
+model_name_or_path: models/Llama-3.2-3B-ReArc-merged
+dataset_dir: data/dpo_rearc_motif_pilot_12x2
+output_dir: outputs/llama3b-dpo-example
+
+stage: dpo
+do_train: true
+pref_beta: 0.1
+pref_loss: sigmoid
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-6
+num_train_epochs: 1
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+max_length: 4096
+max_prompt_length: 3584
+
+lora_rank: 32
+lora_alpha: 16
+lora_dropout: 0.05
+lora_target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+  - embed_tokens
+  - lm_head
+
+bf16: true
+gradient_checkpointing: true
+optim: paged_adamw_8bit
+logging_steps: 10
+save_steps: 150
+seed: 42

@@ -1,0 +1,3 @@
+Source: https://github.com/arcprize/ARC-AGI-2
+Content: public ARC-AGI-2 training/evaluation only
+Private test sets are not included in the public repository.
